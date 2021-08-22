@@ -80,7 +80,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   top: -5%;
-  gap: 5%
+  column-gap: 15%;
+  row-gap: 5%;
 }
 .bush {
   justify-content: space-between;
@@ -108,7 +109,7 @@ body {
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 80%;
+  height: 100%;
   transition:all 0.2s;
   z-index: 1;
   padding-bottom: 10px;
@@ -116,7 +117,7 @@ body {
 .dino:active {
   background: url('./dizzy-comp.png') center no-repeat;
   width: 80%;
-  height: 90%;
+  height: 100%;
 }
 
 
