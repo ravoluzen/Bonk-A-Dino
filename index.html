@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Whack A Dino!</title>
+  <title>Bonk A Dino!</title>
   <link href='./JurassicPark-BL48.ttf' type='text/css'>
   <link rel="stylesheet" href="GameStyle.css">
 </head>
@@ -11,14 +11,12 @@
   <div class="text">
     <h1>Bonk-a-Dino! </h1>
     <div id="btnStart">
-      <span class="startElements" onClick="noob()">Noob</span>
-      <button class="startElements" onClick="startGame()">Start!</button>
-      <span class="startElements" onClick="pro()">Pro</span>
+      <span class="startElements" onClick="noob(); startGame()">Noob Bonker</span>
+      <span class="startElements" onClick="pro(); startGame()">Pro Bonker</span>
     </div>
   </div>
   <div id="dashboard">
-    <span class="score">0</span>
-    <span class="highScore">HS: </span>
+    <span class="score"></span>
   </div>
 
   <div class="game">
