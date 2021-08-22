@@ -45,7 +45,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "JFRockCropOut";
-  border: 1px solid;
   height: 60px;
 }
 .score {
@@ -72,7 +71,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid;
 }
 
 .game {
@@ -90,7 +88,6 @@ body {
   overflow: hidden;
   padding-top: 5%;
   position: relative;
-  border: 1px solid;
 }
 
 .bush:after {
@@ -103,7 +100,6 @@ body {
   position: absolute;
   z-index: 2;
   bottom: -15%;
-  border: 1px solid;
 }
 
 .dino {
@@ -115,7 +111,6 @@ body {
   height: 80%;
   transition:all 0.2s;
   z-index: 1;
-  border: 1px solid;
   padding-bottom: 10px;
 }
 .dino:active {
