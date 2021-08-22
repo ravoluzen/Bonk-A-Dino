@@ -73,6 +73,6 @@ function pro() {
 }
 
 function noob() {
-    min_time = 800;
-    max_time = 1200;
+    min_time = 700;
+    max_time = 1000;
 }
