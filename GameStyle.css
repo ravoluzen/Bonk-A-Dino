@@ -10,153 +10,131 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 @font-face {
-  font-family: "Jurassic Park";
-  src: url("./DinoFont.ttf");
-  font-family: "JFRockCropOut";
+  font-family: "JFRockOutcrop";
   src: url("./JFRocOut.ttf");
+  font-family: "JFRockSol";
+  src: url("./JFRocSol.TTF");
 }
 
-h1{
-  font-family: "JFRockSolid";
+h1 {
+  font-family: "JFRockSol";
   font-weight: 400;
+  font-size: 3em;
   text-align: center;
-  font-size: 10rem;
-  margin: 10% 0 0 0;
+  line-height: 0.3;
 }
 
-body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  height: 94%;
 }
-
-.text {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-
-#dashboard{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "JFRockCropOut";
-  height: 60px;
-}
-.score {
-  font-size: 6em;
-  background: none;
-}
-
-.startElements {
-  margin-top: 10%;
-  background: none;
-  font-size: 4.5em;
-  font-family: "JFRockCropOut";
-}
-
-.startElements:hover{
-  color: #fff;
-  cursor: pointer;
-  font-family: "JFRockCropOut";
-}
-
 
 #btnStart{
-  width: 100%;
+  font-family: "JFRockOutcrop";
+  font-size: 1.8em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  line-height: 1.5em;
+}
+
+.startElements{
+  overflow-wrap: break-word;
+  text-align:center;
+}
+.startElements:active{
+  text-shadow: 2px 2px 1px white;
+}
+.startElements:hover{
+  text-shadow: 2px 2px 1px white;
+}
+
+#dashboard{
+  width: 100%;
+  line-height:0.1;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.score{
+  font-family: "JFRockSol";
+  font-size: 3em;
+
 }
 
 .game {
   width: 100%;
-  height: 70%;
+  height: 80%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  justify-content: space-between;
-  top: -5%;
-  column-gap: 15%;
-  row-gap: 5%;
-}
-.bush {
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  padding-top: 5%;
-  position: relative;
 }
 
-.bush:after {
+.bush{
+  flex: 1 0 50%;
+  overflow: hidden;
+  position: relative;
+}
+.bush:after{
   display: block;
   background: url('./bush-comp.png') bottom center no-repeat;
-  background-size: 80%;
+  background-size: contain;
   content: '';
-  width: 350px;
-  height: 65%;
+  width: 100%;
+  height: 60%;
   position: absolute;
   z-index: 2;
-  bottom: -15%;
+  bottom: -13%;
 }
 
 .dino {
   background: url('./drink-comp.png') center no-repeat;
-  background-size: 80%;
+  background-size: 50%;
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 100%;
-  transition:all 0.2s;
-  z-index: 1;
-  padding-bottom: 10px;
+  height: 90%;
+  transition: all 0.2s;
+  bottom: 2%;
 }
 .dino:active {
   background: url('./dizzy-comp.png') center no-repeat;
-  width: 80%;
-  height: 100%;
+  background-size: 60%;
+  text-shadow: 4px 4px 10px white;
 }
 
-
-.bush.up .dino {
+.bush.up .dino{
   top: 0;
 }
 
-@media(min-width: 834px) {
-  .text {
-    margin-top: -5%;
+@media screen and (min-width: 580px){
+  h1{
+    font-size: 6em;
   }
 
   #btnStart{
-    margin-top: -5%;
+    margin-top: 5%;
+    font-size: 3em;
   }
 
-  #dashboard{
-    font-size:1rem;
-    margin-top: 0%;
-    align-items: center;
+  .score{
+    font-size: 8em;
+    text-align: center;
+    padding-top: 0;
   }
 
   .game{
-    flex-direction: row;
-    margin-top: 15%;
-    justify-content: center;
+    flex-direction: column;
+    height: 65%;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-self: center;
+    bottom: 0;
   }
 
-  .dino:active {
-    background-size: 100%;
+  .bush:after{
+    width: 100%;
   }
-
-  .bush {
-    overflow: hidden;
-    position: relative;
-    width: 350px;
-    margin-top: -5%;
-    
-  }
-
 }
-
