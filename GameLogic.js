@@ -47,15 +47,15 @@ function peep() {
 function pro() {
     min_time = 400;
     max_time = 800;
-    document.getElementById("pro").style.fontFamily = "JFRockSol";
-    document.getElementById("noob").style.fontFamily = "JFRockOutCrop";
+    document.getElementById("pro").style.color = "white";
+    document.getElementById("noob").style.color = "black";
 }
  
 function noob() {
     min_time = 600;
     max_time = 1000;
-    document.getElementById("noob").style.fontFamily = "JFRockSol";
-    document.getElementById("pro").style.fontFamily = "JFRockOutCrop";
+    document.getElementById("noob").style.color = "white";
+    document.getElementById("pro").style.color = "black";
 }
 function startGame() {
     scoreBoard.textContent = 0;

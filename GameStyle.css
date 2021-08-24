@@ -31,7 +31,7 @@ body{
 }
 
 #btnStart{
-  font-family: "JFRockOutcrop";
+  font-family: "JFRockSol";
   font-size: 1.8em;
   display: flex;
   justify-content: space-evenly;
@@ -44,10 +44,12 @@ body{
   text-align:center;
 }
 .startElements:active{
-  text-shadow: 2px 2px 1px white;
+  text-shadow: 5px 5px 10px rgb(183, 255, 76),
+              -5px -5px 10px rgb(183, 255, 76);
 }
 .startElements:hover{
-  text-shadow: 2px 2px 1px white;
+  text-shadow: 5px 5px 10px rgb(183, 255, 76),
+              -5px -5px 10px rgb(183, 255, 76);
 }
 
 #dashboard{
@@ -102,7 +104,7 @@ body{
 .dino:active {
   background: url('./dizzy-comp.png') center no-repeat;
   background-size: 60%;
-  text-shadow: 4px 4px 10px white;
+  text-shadow: 4px 4px 10px greenyellow;
 }
 
 .bush.up .dino{
