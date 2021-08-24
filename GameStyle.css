@@ -12,8 +12,6 @@ html {
 }
 
 @font-face {
-  font-family: "JFRockOutcrop";
-  src: url("./JFRocOut.ttf");
   font-family: "JFRockSol";
   src: url("./JFRocSol.TTF");
 }
