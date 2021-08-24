@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bonk A Dino!</title>
-  <link href='./JurassicPark-BL48.ttf' type='text/css'>
+  <link href='./JFRocSol.TTF' type='text/css'>
+  <link href='./JFRocOut.ttf' type='text/css'>
   <link rel="stylesheet" href="GameStyle.css">
 </head>
 <body>
@@ -11,12 +13,12 @@
   <div class="text">
     <h1>Bonk-a-Dino! </h1>
     <div id="btnStart">
-      <span class="startElements" onClick="noob(); startGame()">Noob Bonker</span>
-      <span class="startElements" onClick="pro(); startGame()">Pro Bonker</span>
+      <span id="noob" class="startElements" onClick="noob(); startGame()">Noob Bonker</span>
+      <span id="pro" class="startElements" onClick="pro(); startGame()">Pro Bonker</span>
     </div>
   </div>
   <div id="dashboard">
-    <span class="score"></span>
+    <span class="score">0</span>
   </div>
 
   <div class="game">
